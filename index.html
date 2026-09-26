@@ -25,16 +25,17 @@
         }
 
         body {
-            font-family: 'Itim', 'Mali', cursive, sans-serif;
-            background: linear-gradient(135deg, #e0f2fe 0%, #fffff 50%, #bae6fd 100%);
+            margin: 0;
+            padding: 0;
+            /* โค้ดไล่เฉดสีโทนฟ้า-ขาวแบบนุ่มนวล */
+            background: linear-gradient(135deg, #e0f2fe 0%, #ffffff 50%, #bae6fd 100%);
             min-height: 100vh;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            overflow-x: hidden;
-            text-align: center;
-            position: relative;
-            padding: 20px;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #0369a1; /* สีตัวอักษรโทนน้ำเงินเข้มสบายตา */
         }
 
         /* Floating background balloons/emojis */
@@ -53,16 +54,12 @@
         }
 
         .card {
-            background: rgba(255, 255, 255, 0.85);
+            background: rgba(255, 255, 255, 0.7);
+            padding: 30px;
+            border-radius: 20px;
             backdrop-filter: blur(10px);
-            padding: 40px 30px;
-            border-radius: 30px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
-            border: 4px solid #fff;
-            max-width: 90%;
-            width: 480px;
-            z-index: 10;
-            animation: popIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            text-align: center;
         }
 
         @keyframes popIn {
@@ -81,7 +78,7 @@
         }
 
         .emoji-bar {
-            font-size: 2.2rem;
+            font-size: 0.5rem;
             margin: 15px 0;
             animation: bounce 1.5s infinite;
         }
@@ -92,7 +89,7 @@
         }
 
         .sub-text {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             color: #4a4a4a;
             margin-top: 10px;
         }
